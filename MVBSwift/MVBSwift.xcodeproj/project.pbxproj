@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -56,7 +56,6 @@
 				CCA8770CCC55AE99AD281D50 /* Pods-MVBSwift.debug.xcconfig */,
 				FAA101466BE15D3331D0F38B /* Pods-MVBSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +80,11 @@
 		CD31DA46250A0A2F005C0725 /* MVBSwift */ = {
 			isa = PBXGroup;
 			children = (
+				CD31DA5B250A14C1005C0725 /* Base */,
+				CD31DA5C250A14C8005C0725 /* Home */,
+				CD31DA63250A14D8005C0725 /* Message */,
+				CD31DA6A250A14DF005C0725 /* Discover */,
+				CD31DA72250A14F0005C0725 /* Profile */,
 				CD31DA47250A0A2F005C0725 /* AppDelegate.swift */,
 				CD31DA49250A0A2F005C0725 /* SceneDelegate.swift */,
 				CD31DA4B250A0A2F005C0725 /* ViewController.swift */,
@@ -88,8 +92,115 @@
 				CD31DA50250A0A34005C0725 /* Assets.xcassets */,
 				CD31DA52250A0A34005C0725 /* LaunchScreen.storyboard */,
 				CD31DA55250A0A34005C0725 /* Info.plist */,
+				CD31DA71250A14E6005C0725 /* Utils */,
 			);
 			path = MVBSwift;
+			sourceTree = "<group>";
+		};
+		CD31DA5B250A14C1005C0725 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CD31DA5C250A14C8005C0725 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CD31DA5D250A14C8005C0725 /* ViewModel */,
+				CD31DA5F250A14C8005C0725 /* Model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CD31DA5D250A14C8005C0725 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD31DA5F250A14C8005C0725 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD31DA63250A14D8005C0725 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				CD31DA64250A14D8005C0725 /* ViewModel */,
+				CD31DA66250A14D8005C0725 /* Model */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		CD31DA64250A14D8005C0725 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD31DA66250A14D8005C0725 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD31DA6A250A14DF005C0725 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				CD31DA6B250A14DF005C0725 /* ViewModel */,
+				CD31DA6D250A14DF005C0725 /* Model */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		CD31DA6B250A14DF005C0725 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD31DA6D250A14DF005C0725 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD31DA71250A14E6005C0725 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CD31DA72250A14F0005C0725 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CD31DA73250A14F0005C0725 /* ViewModel */,
+				CD31DA75250A14F0005C0725 /* Model */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CD31DA73250A14F0005C0725 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD31DA75250A14F0005C0725 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
