@@ -14,6 +14,8 @@
 		CD31DA4F250A0A2F005C0725 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD31DA4D250A0A2F005C0725 /* Main.storyboard */; };
 		CD31DA51250A0A34005C0725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD31DA50250A0A34005C0725 /* Assets.xcassets */; };
 		CD31DA54250A0A34005C0725 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD31DA52250A0A34005C0725 /* LaunchScreen.storyboard */; };
+		CD31DA7A250A2B67005C0725 /* GlobalDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DA79250A2B67005C0725 /* GlobalDefine.swift */; };
+		CD31DA7E250B6EFD005C0725 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DA7D250B6EFD005C0725 /* StringUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		CD31DA50250A0A34005C0725 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD31DA53250A0A34005C0725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD31DA55250A0A34005C0725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD31DA79250A2B67005C0725 /* GlobalDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalDefine.swift; sourceTree = "<group>"; };
+		CD31DA7D250B6EFD005C0725 /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 		D0FF273BB78973C448E9EF72 /* Pods_MVBSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVBSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA101466BE15D3331D0F38B /* Pods-MVBSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVBSwift.release.xcconfig"; path = "Target Support Files/Pods-MVBSwift/Pods-MVBSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +92,7 @@
 				CD31DA47250A0A2F005C0725 /* AppDelegate.swift */,
 				CD31DA49250A0A2F005C0725 /* SceneDelegate.swift */,
 				CD31DA4B250A0A2F005C0725 /* ViewController.swift */,
+				CD31DA79250A2B67005C0725 /* GlobalDefine.swift */,
 				CD31DA4D250A0A2F005C0725 /* Main.storyboard */,
 				CD31DA50250A0A34005C0725 /* Assets.xcassets */,
 				CD31DA52250A0A34005C0725 /* LaunchScreen.storyboard */,
@@ -176,6 +181,7 @@
 		CD31DA71250A14E6005C0725 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CD31DA7D250B6EFD005C0725 /* StringUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -318,7 +324,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD31DA7E250B6EFD005C0725 /* StringUtils.swift in Sources */,
 				CD31DA4C250A0A2F005C0725 /* ViewController.swift in Sources */,
+				CD31DA7A250A2B67005C0725 /* GlobalDefine.swift in Sources */,
 				CD31DA48250A0A2F005C0725 /* AppDelegate.swift in Sources */,
 				CD31DA4A250A0A2F005C0725 /* SceneDelegate.swift in Sources */,
 			);
@@ -473,6 +481,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
 				PRODUCT_BUNDLE_IDENTIFIER = M.MVBSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -493,6 +502,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
 				PRODUCT_BUNDLE_IDENTIFIER = M.MVBSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
