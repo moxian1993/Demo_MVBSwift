@@ -12,27 +12,33 @@ extension String {
     
     
     /// substring from index
-    /// - Parameter from: from
+    /// - Parameters:
+    ///   - from: from: from
+    ///   - include: default is true
     /// - Returns: string
-    func utils_substring(from: Int) -> String {
+    func utils_substring(from: Int, include: Bool = true) -> String {
         if from >= count {
             return ""
         }
         let start = index(startIndex, offsetBy: from)
-        let sub = suffix(from: start)
+        let sub = include ? self[start...] : self[start...].dropFirst()
+        //  let sub = suffix(from: start)
         return String(sub)
     }
 
     
     /// substring to index
-    /// - Parameter to: to
+    /// - Parameters:
+    ///   - to: to
+    ///   - include: default is false
     /// - Returns: string
-    func utils_substring(to: Int) -> String {
+    func utils_substring(to: Int, include: Bool = false) -> String {
         if to >= count {
-            return ""
+            return self
         }
         let end = index(startIndex, offsetBy: to)
-        let sub = prefix(upTo: end)
+        let sub = include ? self[...end] : self[..<end]
+        // let sub = prefix(upTo: end) // 开区间
         return String(sub)
     }
 
@@ -48,7 +54,8 @@ extension String {
         }
         let start = index(startIndex, offsetBy: left)
         let end = index(endIndex, offsetBy: -right)
-        let sub = suffix(from: start).prefix(upTo: end)
+        let sub = self[start..<end]
+        // let sub = suffix(from: start).prefix(upTo: end)
         
         return String(sub)
     }
@@ -64,7 +71,8 @@ extension String {
         let start = left == "" ? startIndex : (firstIndex(of: Character(left)) ?? startIndex)
         let end = right == "" ? endIndex : (lastIndex(of: Character(right)) ?? endIndex)
         
-        var sub = suffix(from: start).prefix(upTo: end)
+        var sub = self[start..<end]
+        // var sub = suffix(from: start).prefix(upTo: end)
         
         if start != startIndex {
             sub = sub.dropFirst()
