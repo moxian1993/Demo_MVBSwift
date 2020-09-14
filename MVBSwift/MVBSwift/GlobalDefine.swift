@@ -25,37 +25,62 @@ internal func Img(_ name: String) -> UIImage {
 }
 
 //internal func LocalizedString(_ string: String) -> String {
-//    return FtSelectLanguageManager.bundle().localizedString(forKey: string, value: nil, table: "Localizable")
+//    return ThemeManager.Language.bundle().localizedString(forKey: string, value: nil, table: "Localizable")
 //}
 
 //MARK: - adaptor
-let NavBar_Height: CGFloat = 64.0
-let TabBar_Hieght: CGFloat = 49.0
-
 let iPhone6_Width: CGFloat = 375.0
 let iPhone6_Height: CGFloat = 667.0
 
+let Screen_Bounds: CGRect = UIScreen.main.bounds
+let Screen_Width: CGFloat = Screen_Bounds.size.width
+let Screen_Height: CGFloat = Screen_Bounds.size.height
 
-let Screen_Width = { () -> CGFloat in
-    return UIScreen.main.bounds.size.width
+let StatusBar_Hieght: CGFloat = {
+    if #available(iOS 13.0, *) {
+        let statusBarManager = UIApplication.shared.windows.first?.windowScene?.statusBarManager
+        return statusBarManager!.statusBarFrame.size.height
+    } else {
+        return UIApplication.shared.statusBarFrame.size.height
+    }
 }()
 
-let Screen_Height = { () -> CGFloat in
-    return UIScreen.main.bounds.size.height
-}()
 
-let StatusBar_Hieght = { () -> CGFloat in
-    return UIApplication.shared.statusBarFrame.size.height
-}()
+let AdaptScale: CGFloat = iPhone6_Width / Screen_Width
 
-let Screen_Scale_Horizontal = { () -> CGFloat in
-    return Screen_Width / iPhone6_Width
-}()
+let AdaptSafeTop: CGFloat = StatusBar_Hieght
 
-let Screen_Scale_Vertical = { () -> CGFloat in
-    return Screen_Height / iPhone6_Height
-}()
+let AdaptSafeBottom = { () -> CGFloat in
+    guard #available(iOS 11.0, *) else {
+        return 0.0
+    }
+    if #available(iOS 13.0, *), let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate {
+        return (sceneDelegate as! SceneDelegate).window?.safeAreaInsets.bottom ?? 0.0
+    }
+    return UIApplication.shared.delegate?.window??.safeAreaInsets.bottom ?? 0.0
+} ()
 
+
+func findWindow() -> UIWindow? {
+    if #available(iOS 13.0, *) {
+        /* 方法一 */
+        return UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+        /* 方法二 */
+        // return UIApplication.shared.windows.first {$0.isKeyWindow}
+        /* 方法三 */
+        /*
+        let keyWindow = UIApplication.shared.connectedScenes
+            .filter({$0.activationState == .foregroundActive})
+            .map({$0 as? UIWindowScene})
+            .compactMap({$0})
+            .first?.windows
+            .filter({$0.isKeyWindow}).first
+        return keyWindow
+        */
+    } else {
+        return UIApplication.shared.keyWindow
+    }
+}
 
 
 

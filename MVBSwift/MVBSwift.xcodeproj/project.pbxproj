@@ -10,12 +10,18 @@
 		0979A74FA3FFA29B5D246EC0 /* Pods_MVBSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FF273BB78973C448E9EF72 /* Pods_MVBSwift.framework */; };
 		CD31DA48250A0A2F005C0725 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DA47250A0A2F005C0725 /* AppDelegate.swift */; };
 		CD31DA4A250A0A2F005C0725 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DA49250A0A2F005C0725 /* SceneDelegate.swift */; };
-		CD31DA4C250A0A2F005C0725 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DA4B250A0A2F005C0725 /* ViewController.swift */; };
-		CD31DA4F250A0A2F005C0725 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD31DA4D250A0A2F005C0725 /* Main.storyboard */; };
 		CD31DA51250A0A34005C0725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD31DA50250A0A34005C0725 /* Assets.xcassets */; };
 		CD31DA54250A0A34005C0725 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD31DA52250A0A34005C0725 /* LaunchScreen.storyboard */; };
 		CD31DA7A250A2B67005C0725 /* GlobalDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DA79250A2B67005C0725 /* GlobalDefine.swift */; };
 		CD31DA7E250B6EFD005C0725 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DA7D250B6EFD005C0725 /* StringUtils.swift */; };
+		CD31DA8A250F93AA005C0725 /* SetUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DA89250F93A9005C0725 /* SetUtils.swift */; };
+		CD31DAA5250FD464005C0725 /* MOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DAA4250FD464005C0725 /* MOViewController.swift */; };
+		CD31DAA7250FD488005C0725 /* MOTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DAA6250FD488005C0725 /* MOTabBarController.swift */; };
+		CD31DAA9250FD498005C0725 /* MONaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DAA8250FD498005C0725 /* MONaviController.swift */; };
+		CD31DAAB250FE901005C0725 /* MOHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DAAA250FE901005C0725 /* MOHomeController.swift */; };
+		CD31DAAF250FE915005C0725 /* MODiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DAAE250FE915005C0725 /* MODiscoverController.swift */; };
+		CD31DAB1250FE921005C0725 /* MOProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DAB0250FE921005C0725 /* MOProfileController.swift */; };
+		CD31DAB3250FF325005C0725 /* MOMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DAB2250FF325005C0725 /* MOMessageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,13 +29,19 @@
 		CD31DA44250A0A2F005C0725 /* MVBSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVBSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD31DA47250A0A2F005C0725 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD31DA49250A0A2F005C0725 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CD31DA4B250A0A2F005C0725 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CD31DA4E250A0A2F005C0725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD31DA50250A0A34005C0725 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD31DA53250A0A34005C0725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD31DA55250A0A34005C0725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD31DA79250A2B67005C0725 /* GlobalDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalDefine.swift; sourceTree = "<group>"; };
 		CD31DA7D250B6EFD005C0725 /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		CD31DA89250F93A9005C0725 /* SetUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUtils.swift; sourceTree = "<group>"; };
+		CD31DAA4250FD464005C0725 /* MOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOViewController.swift; sourceTree = "<group>"; };
+		CD31DAA6250FD488005C0725 /* MOTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTabBarController.swift; sourceTree = "<group>"; };
+		CD31DAA8250FD498005C0725 /* MONaviController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MONaviController.swift; sourceTree = "<group>"; };
+		CD31DAAA250FE901005C0725 /* MOHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOHomeController.swift; sourceTree = "<group>"; };
+		CD31DAAE250FE915005C0725 /* MODiscoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MODiscoverController.swift; sourceTree = "<group>"; };
+		CD31DAB0250FE921005C0725 /* MOProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOProfileController.swift; sourceTree = "<group>"; };
+		CD31DAB2250FF325005C0725 /* MOMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOMessageController.swift; sourceTree = "<group>"; };
 		D0FF273BB78973C448E9EF72 /* Pods_MVBSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVBSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA101466BE15D3331D0F38B /* Pods-MVBSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVBSwift.release.xcconfig"; path = "Target Support Files/Pods-MVBSwift/Pods-MVBSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,9 +103,7 @@
 				CD31DA72250A14F0005C0725 /* Profile */,
 				CD31DA47250A0A2F005C0725 /* AppDelegate.swift */,
 				CD31DA49250A0A2F005C0725 /* SceneDelegate.swift */,
-				CD31DA4B250A0A2F005C0725 /* ViewController.swift */,
 				CD31DA79250A2B67005C0725 /* GlobalDefine.swift */,
-				CD31DA4D250A0A2F005C0725 /* Main.storyboard */,
 				CD31DA50250A0A34005C0725 /* Assets.xcassets */,
 				CD31DA52250A0A34005C0725 /* LaunchScreen.storyboard */,
 				CD31DA55250A0A34005C0725 /* Info.plist */,
@@ -105,6 +115,9 @@
 		CD31DA5B250A14C1005C0725 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				CD31DAA4250FD464005C0725 /* MOViewController.swift */,
+				CD31DAA6250FD488005C0725 /* MOTabBarController.swift */,
+				CD31DAA8250FD498005C0725 /* MONaviController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -114,6 +127,7 @@
 			children = (
 				CD31DA5D250A14C8005C0725 /* ViewModel */,
 				CD31DA5F250A14C8005C0725 /* Model */,
+				CD31DAAA250FE901005C0725 /* MOHomeController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -137,6 +151,7 @@
 			children = (
 				CD31DA64250A14D8005C0725 /* ViewModel */,
 				CD31DA66250A14D8005C0725 /* Model */,
+				CD31DAB2250FF325005C0725 /* MOMessageController.swift */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -160,6 +175,7 @@
 			children = (
 				CD31DA6B250A14DF005C0725 /* ViewModel */,
 				CD31DA6D250A14DF005C0725 /* Model */,
+				CD31DAAE250FE915005C0725 /* MODiscoverController.swift */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -182,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				CD31DA7D250B6EFD005C0725 /* StringUtils.swift */,
+				CD31DA89250F93A9005C0725 /* SetUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -191,6 +208,7 @@
 			children = (
 				CD31DA73250A14F0005C0725 /* ViewModel */,
 				CD31DA75250A14F0005C0725 /* Model */,
+				CD31DAB0250FE921005C0725 /* MOProfileController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -237,6 +255,7 @@
 		CD31DA3C250A0A2F005C0725 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MO;
 				LastSwiftUpdateCheck = 1170;
 				LastUpgradeCheck = 1170;
 				ORGANIZATIONNAME = Mo;
@@ -271,7 +290,6 @@
 			files = (
 				CD31DA54250A0A34005C0725 /* LaunchScreen.storyboard in Resources */,
 				CD31DA51250A0A34005C0725 /* Assets.xcassets in Resources */,
-				CD31DA4F250A0A2F005C0725 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,25 +342,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD31DAAF250FE915005C0725 /* MODiscoverController.swift in Sources */,
+				CD31DA8A250F93AA005C0725 /* SetUtils.swift in Sources */,
+				CD31DAA5250FD464005C0725 /* MOViewController.swift in Sources */,
 				CD31DA7E250B6EFD005C0725 /* StringUtils.swift in Sources */,
-				CD31DA4C250A0A2F005C0725 /* ViewController.swift in Sources */,
 				CD31DA7A250A2B67005C0725 /* GlobalDefine.swift in Sources */,
 				CD31DA48250A0A2F005C0725 /* AppDelegate.swift in Sources */,
+				CD31DAAB250FE901005C0725 /* MOHomeController.swift in Sources */,
+				CD31DAB1250FE921005C0725 /* MOProfileController.swift in Sources */,
+				CD31DAB3250FF325005C0725 /* MOMessageController.swift in Sources */,
 				CD31DA4A250A0A2F005C0725 /* SceneDelegate.swift in Sources */,
+				CD31DAA7250FD488005C0725 /* MOTabBarController.swift in Sources */,
+				CD31DAA9250FD498005C0725 /* MONaviController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CD31DA4D250A0A2F005C0725 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CD31DA4E250A0A2F005C0725 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CD31DA52250A0A34005C0725 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -485,7 +502,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = M.MVBSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -506,7 +523,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = M.MVBSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
