@@ -13,6 +13,7 @@ class MOTabBarController: UITabBarController {
     init() {
         super.init(nibName: nil, bundle: nil)
         setup()
+        setValue(MOTabBar(), forKey: "tabBar")
     }
     
     required init?(coder: NSCoder) {

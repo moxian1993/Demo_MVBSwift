@@ -19,15 +19,6 @@ func MLog<T>(_ message: T, file: String = #file, function: String = #function, l
 }
 
 
-//MARK: - resource
-internal func Img(_ name: String) -> UIImage {
-    return UIImage(named: name)!
-}
-
-//internal func LocalizedString(_ string: String) -> String {
-//    return ThemeManager.Language.bundle().localizedString(forKey: string, value: nil, table: "Localizable")
-//}
-
 //MARK: - adaptor
 let iPhone6_Width: CGFloat = 375.0
 let iPhone6_Height: CGFloat = 667.0
@@ -81,21 +72,6 @@ func findWindow() -> UIWindow? {
         return UIApplication.shared.keyWindow
     }
 }
-
-
-
-//MARK: - color
-//internal func HEXCOLOR(_ hex: UInt32) -> UIColor {
-//    return UIColor.m_color(withHex: hex)
-//}
-//
-//internal func RANDOMCOLOR() -> UIColor {
-//    return UIColor.m_random()
-//}
-//
-//internal func RBGCOLOR(R r: UInt8, G g: UInt8, B b: UInt8) -> UIColor {
-//    return UIColor.m_color(withRed: r, green: g, blue: b)
-//}
 
 
 //MARK: - font

@@ -22,6 +22,13 @@
 		CD31DAAF250FE915005C0725 /* MODiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DAAE250FE915005C0725 /* MODiscoverController.swift */; };
 		CD31DAB1250FE921005C0725 /* MOProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DAB0250FE921005C0725 /* MOProfileController.swift */; };
 		CD31DAB3250FF325005C0725 /* MOMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DAB2250FF325005C0725 /* MOMessageController.swift */; };
+		CD31DAB525106280005C0725 /* MOTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DAB425106280005C0725 /* MOTabBar.swift */; };
+		CD31DABD2510A480005C0725 /* MOOauthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DABC2510A480005C0725 /* MOOauthViewModel.swift */; };
+		CD31DABF2510A876005C0725 /* MOBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DABE2510A876005C0725 /* MOBaseController.swift */; };
+		CD31DAC12510AAAF005C0725 /* ViewSuger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DAC02510AAAF005C0725 /* ViewSuger.swift */; };
+		CDC20DB62510FF53009AFD7D /* ImageSuger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC20DB52510FF53009AFD7D /* ImageSuger.swift */; };
+		CDC20DB82510FF67009AFD7D /* ColorSuger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC20DB72510FF67009AFD7D /* ColorSuger.swift */; };
+		CDC20DBA25110229009AFD7D /* UIControlSuger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC20DB925110229009AFD7D /* UIControlSuger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +49,13 @@
 		CD31DAAE250FE915005C0725 /* MODiscoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MODiscoverController.swift; sourceTree = "<group>"; };
 		CD31DAB0250FE921005C0725 /* MOProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOProfileController.swift; sourceTree = "<group>"; };
 		CD31DAB2250FF325005C0725 /* MOMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOMessageController.swift; sourceTree = "<group>"; };
+		CD31DAB425106280005C0725 /* MOTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTabBar.swift; sourceTree = "<group>"; };
+		CD31DABC2510A480005C0725 /* MOOauthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOOauthViewModel.swift; sourceTree = "<group>"; };
+		CD31DABE2510A876005C0725 /* MOBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOBaseController.swift; sourceTree = "<group>"; };
+		CD31DAC02510AAAF005C0725 /* ViewSuger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSuger.swift; sourceTree = "<group>"; };
+		CDC20DB52510FF53009AFD7D /* ImageSuger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSuger.swift; sourceTree = "<group>"; };
+		CDC20DB72510FF67009AFD7D /* ColorSuger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSuger.swift; sourceTree = "<group>"; };
+		CDC20DB925110229009AFD7D /* UIControlSuger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControlSuger.swift; sourceTree = "<group>"; };
 		D0FF273BB78973C448E9EF72 /* Pods_MVBSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVBSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA101466BE15D3331D0F38B /* Pods-MVBSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVBSwift.release.xcconfig"; path = "Target Support Files/Pods-MVBSwift/Pods-MVBSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				CD31DA5B250A14C1005C0725 /* Base */,
+				CD31DABA2510A44D005C0725 /* Oauth */,
 				CD31DA5C250A14C8005C0725 /* Home */,
 				CD31DA63250A14D8005C0725 /* Message */,
 				CD31DA6A250A14DF005C0725 /* Discover */,
@@ -116,7 +131,9 @@
 			isa = PBXGroup;
 			children = (
 				CD31DAA4250FD464005C0725 /* MOViewController.swift */,
+				CD31DABE2510A876005C0725 /* MOBaseController.swift */,
 				CD31DAA6250FD488005C0725 /* MOTabBarController.swift */,
+				CD31DAB425106280005C0725 /* MOTabBar.swift */,
 				CD31DAA8250FD498005C0725 /* MONaviController.swift */,
 			);
 			path = Base;
@@ -199,6 +216,10 @@
 			children = (
 				CD31DA7D250B6EFD005C0725 /* StringUtils.swift */,
 				CD31DA89250F93A9005C0725 /* SetUtils.swift */,
+				CD31DAC02510AAAF005C0725 /* ViewSuger.swift */,
+				CDC20DB52510FF53009AFD7D /* ImageSuger.swift */,
+				CDC20DB925110229009AFD7D /* UIControlSuger.swift */,
+				CDC20DB72510FF67009AFD7D /* ColorSuger.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -225,6 +246,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CD31DABA2510A44D005C0725 /* Oauth */ = {
+			isa = PBXGroup;
+			children = (
+				CD31DABC2510A480005C0725 /* MOOauthViewModel.swift */,
+			);
+			path = Oauth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,14 +375,21 @@
 				CD31DA8A250F93AA005C0725 /* SetUtils.swift in Sources */,
 				CD31DAA5250FD464005C0725 /* MOViewController.swift in Sources */,
 				CD31DA7E250B6EFD005C0725 /* StringUtils.swift in Sources */,
+				CD31DABF2510A876005C0725 /* MOBaseController.swift in Sources */,
+				CD31DAC12510AAAF005C0725 /* ViewSuger.swift in Sources */,
 				CD31DA7A250A2B67005C0725 /* GlobalDefine.swift in Sources */,
 				CD31DA48250A0A2F005C0725 /* AppDelegate.swift in Sources */,
 				CD31DAAB250FE901005C0725 /* MOHomeController.swift in Sources */,
 				CD31DAB1250FE921005C0725 /* MOProfileController.swift in Sources */,
 				CD31DAB3250FF325005C0725 /* MOMessageController.swift in Sources */,
+				CDC20DBA25110229009AFD7D /* UIControlSuger.swift in Sources */,
+				CDC20DB82510FF67009AFD7D /* ColorSuger.swift in Sources */,
+				CD31DABD2510A480005C0725 /* MOOauthViewModel.swift in Sources */,
 				CD31DA4A250A0A2F005C0725 /* SceneDelegate.swift in Sources */,
+				CDC20DB62510FF53009AFD7D /* ImageSuger.swift in Sources */,
 				CD31DAA7250FD488005C0725 /* MOTabBarController.swift in Sources */,
 				CD31DAA9250FD498005C0725 /* MONaviController.swift in Sources */,
+				CD31DAB525106280005C0725 /* MOTabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.2.2)
+  - Cupcake (1.3.1)
   - Kingfisher (5.15.0):
     - Kingfisher/Core (= 5.15.0)
   - Kingfisher/Core (5.15.0)
@@ -8,6 +9,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - Cupcake
   - Kingfisher
   - SnapKit
   - SwiftyJSON
@@ -15,16 +17,18 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Cupcake
     - Kingfisher
     - SnapKit
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  Cupcake: d258b6c0c289f7072340990107892aeb20d3fe98
   Kingfisher: 1acb67597a520c2d0310677e66d6e0af455ef757
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 9951325c10edefe34770d82abf7f4935e39c9e19
+PODFILE CHECKSUM: 732af88331899cf45ed01d0c6a6c0804ef2982de
 
 COCOAPODS: 1.9.1
