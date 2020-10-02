@@ -42,6 +42,11 @@ extension UIView {
         set { size.height = newValue }
     }
     
+    @discardableResult func _sizeToFit() -> Self {
+        sizeToFit()
+        return self
+    }
+    
     
     @discardableResult func _addTo(_ superView: UIView) -> Self {
         superView.addSubview(self)

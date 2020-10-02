@@ -8,7 +8,16 @@
 
 import Foundation
 
-extension Array {
+extension Sequence {
+    // playlist.songs.sorted(by: \.ratings.worldWide)
+    func sorted_keypath<T: Comparable>(by keyPath: KeyPath<Element, T>) -> [Element] {
+        return sorted { a, b in
+            return a[keyPath: keyPath] < b[keyPath: keyPath]
+        }
+    }
+}
+
+extension Array where Array.Element: Comparable {
     
     /// model排序 (闭包中 obj as! model 即可使用属性)
     /// 或 arr.sorted_oc (by: {($0 as! model).pid < ($1 as! model).pid})
