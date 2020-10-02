@@ -21,11 +21,9 @@ class MOTabBarController: UITabBarController {
     }
     
     func setup() {
-        let arr = ["Home", "Message", "Discover", "Profile"]
-        
-        for name in arr {
-            let proj = Bundle.main.infoDictionary?["CFBundleExecutable"] as! String
-            let clz = NSClassFromString("\(proj)." + "MO\(name)Controller") as! UIViewController.Type
+        ["Home", "Message", "Discover", "Profile"].forEach({ (name) in
+            let proj = Bundle.main.infoDictionary?["CFBundleExecutable"] as? String ?? ""
+            let clz = NSClassFromString("\(proj)"+".MO\(name)Controller") as! UIViewController.Type
             let vc = clz.init()
             let navi = MONaviController.init(rootViewController: vc)
             
@@ -35,7 +33,7 @@ class MOTabBarController: UITabBarController {
             navi.tabBarItem.title = name
             navi.tabBarItem.setTitleTextAttributes([.foregroundColor: UIColor.orange], for: .normal)
             addChild(navi)
-        }
+        })
     }
     
     override func viewDidLoad() {

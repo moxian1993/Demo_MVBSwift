@@ -13,6 +13,8 @@ class MOHomeController: MOViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.rightBarButtonItem = popItem
+        
         // Do any additional setup after loading the view.
         
         //        let api = "https://api.apiopen.top/recommendPoetry"
@@ -26,6 +28,17 @@ class MOHomeController: MOViewController {
         
     }
     
+    @objc private func popBtnDidClicked() {
+        print(#function)
+    }
+
+    /* navi pop button */
+    lazy var popItem: UIBarButtonItem = {
+        let btn = UIButton(type: .custom)._img("navigationbar_pop", for: .normal)._img("navigationbar_pop_highlighted", for: .highlighted)
+        btn.addTarget(self, action: #selector(self.popBtnDidClicked), for: .touchUpInside)
+        return UIBarButtonItem(customView: btn)
+    }()
+
 
     func request(urlStr: String, compeletd:@escaping (Bool, Any) -> Void) {
         guard let url = URL(string: urlStr) else {
@@ -46,14 +59,4 @@ class MOHomeController: MOViewController {
             }.resume()
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -15,15 +15,14 @@ class MOTabBar: UITabBar {
     override func layoutSubviews() {
         super.layoutSubviews()
         var num: CGFloat = 0
-        for subview in subviews {
-            if subview.isKind(of: NSClassFromString("UITabBarButton")!) {
-                subview.frame = CGRect(x: num*itemW, y: 0, width: itemW, height: subview.frame.size.height)
+        
+        subviews.filter({ $0.isKind(of: NSClassFromString("UITabBarButton")!) }).forEach({
+            $0.frame = CGRect(x: num*itemW, y: 0, width: itemW, height: $0.frame.size.height)
+            num += 1
+            if num == 2 {
                 num += 1
-                if num == 2 {
-                    num += 1
-                }
             }
-        }
+        })
     }
     
     override init(frame: CGRect) {
