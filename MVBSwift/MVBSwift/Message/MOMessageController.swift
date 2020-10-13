@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MOMessageController: MOViewController {
+class MOMessageController: MOBaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

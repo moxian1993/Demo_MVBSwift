@@ -4,13 +4,15 @@ platform :ios, '13.0'
 target 'MVBSwift' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 
   # Pods for MVBSwift
 pod 'SnapKit'
 pod 'Alamofire'
 pod 'SwiftyJSON'
-pod 'Kingfisher'
+pod 'Kingfisher','5.15.0'
 pod 'Cupcake'
-
+pod 'MJRefresh'
+pod 'MBProgressHUD'
 
 end

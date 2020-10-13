@@ -25,11 +25,14 @@
 		CD31DAB525106280005C0725 /* MOTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DAB425106280005C0725 /* MOTabBar.swift */; };
 		CD31DABD2510A480005C0725 /* MOOauthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DABC2510A480005C0725 /* MOOauthViewModel.swift */; };
 		CD31DAC12510AAAF005C0725 /* ViewSuger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD31DAC02510AAAF005C0725 /* ViewSuger.swift */; };
+		CD3DD946252745E600B29A8F /* MOBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3DD945252745E600B29A8F /* MOBaseController.swift */; };
+		CD3DD94925274A7400B29A8F /* MOVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3DD94825274A7400B29A8F /* MOVisitorView.swift */; };
 		CDC20DB62510FF53009AFD7D /* ImageSuger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC20DB52510FF53009AFD7D /* ImageSuger.swift */; };
 		CDC20DB82510FF67009AFD7D /* ColorSuger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC20DB72510FF67009AFD7D /* ColorSuger.swift */; };
 		CDC20DBA25110229009AFD7D /* UIControlSuger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC20DB925110229009AFD7D /* UIControlSuger.swift */; };
 		CDC20DBC25121786009AFD7D /* FoundationSuger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC20DBB25121786009AFD7D /* FoundationSuger.swift */; };
 		CDC20DBE25121A35009AFD7D /* UIKitSuger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC20DBD25121A35009AFD7D /* UIKitSuger.swift */; };
+		CDE60BD62535C02D0079404C /* MOMBProgressManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE60BD52535C02D0079404C /* MOMBProgressManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,11 +56,14 @@
 		CD31DAB425106280005C0725 /* MOTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTabBar.swift; sourceTree = "<group>"; };
 		CD31DABC2510A480005C0725 /* MOOauthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOOauthViewModel.swift; sourceTree = "<group>"; };
 		CD31DAC02510AAAF005C0725 /* ViewSuger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSuger.swift; sourceTree = "<group>"; };
+		CD3DD945252745E600B29A8F /* MOBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOBaseController.swift; sourceTree = "<group>"; };
+		CD3DD94825274A7400B29A8F /* MOVisitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOVisitorView.swift; sourceTree = "<group>"; };
 		CDC20DB52510FF53009AFD7D /* ImageSuger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSuger.swift; sourceTree = "<group>"; };
 		CDC20DB72510FF67009AFD7D /* ColorSuger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSuger.swift; sourceTree = "<group>"; };
 		CDC20DB925110229009AFD7D /* UIControlSuger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControlSuger.swift; sourceTree = "<group>"; };
 		CDC20DBB25121786009AFD7D /* FoundationSuger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationSuger.swift; sourceTree = "<group>"; };
 		CDC20DBD25121A35009AFD7D /* UIKitSuger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitSuger.swift; sourceTree = "<group>"; };
+		CDE60BD52535C02D0079404C /* MOMBProgressManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOMBProgressManager.swift; sourceTree = "<group>"; };
 		D0FF273BB78973C448E9EF72 /* Pods_MVBSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVBSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA101466BE15D3331D0F38B /* Pods-MVBSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVBSwift.release.xcconfig"; path = "Target Support Files/Pods-MVBSwift/Pods-MVBSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,9 +139,11 @@
 			isa = PBXGroup;
 			children = (
 				CD31DAA4250FD464005C0725 /* MOViewController.swift */,
+				CD3DD945252745E600B29A8F /* MOBaseController.swift */,
 				CD31DAA6250FD488005C0725 /* MOTabBarController.swift */,
 				CD31DAB425106280005C0725 /* MOTabBar.swift */,
 				CD31DAA8250FD498005C0725 /* MONaviController.swift */,
+				CD3DD94825274A7400B29A8F /* MOVisitorView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -223,6 +231,7 @@
 				CDC20DB72510FF67009AFD7D /* ColorSuger.swift */,
 				CDC20DBB25121786009AFD7D /* FoundationSuger.swift */,
 				CDC20DBD25121A35009AFD7D /* UIKitSuger.swift */,
+				CDE60BD52535C02D0079404C /* MOMBProgressManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -294,6 +303,7 @@
 				TargetAttributes = {
 					CD31DA43250A0A2F005C0725 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -377,11 +387,13 @@
 				CD31DAAF250FE915005C0725 /* MODiscoverController.swift in Sources */,
 				CD31DA8A250F93AA005C0725 /* SetUtils.swift in Sources */,
 				CD31DAA5250FD464005C0725 /* MOViewController.swift in Sources */,
+				CD3DD94925274A7400B29A8F /* MOVisitorView.swift in Sources */,
 				CD31DA7E250B6EFD005C0725 /* StringUtils.swift in Sources */,
 				CDC20DBC25121786009AFD7D /* FoundationSuger.swift in Sources */,
 				CD31DAC12510AAAF005C0725 /* ViewSuger.swift in Sources */,
 				CD31DA7A250A2B67005C0725 /* GlobalDefine.swift in Sources */,
 				CD31DA48250A0A2F005C0725 /* AppDelegate.swift in Sources */,
+				CD3DD946252745E600B29A8F /* MOBaseController.swift in Sources */,
 				CD31DAAB250FE901005C0725 /* MOHomeController.swift in Sources */,
 				CD31DAB1250FE921005C0725 /* MOProfileController.swift in Sources */,
 				CD31DAB3250FF325005C0725 /* MOMessageController.swift in Sources */,
@@ -394,6 +406,7 @@
 				CD31DAA7250FD488005C0725 /* MOTabBarController.swift in Sources */,
 				CD31DAA9250FD498005C0725 /* MONaviController.swift in Sources */,
 				CD31DAB525106280005C0725 /* MOTabBar.swift in Sources */,
+				CDE60BD62535C02D0079404C /* MOMBProgressManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +543,7 @@
 			baseConfigurationReference = CCA8770CCC55AE99AD281D50 /* Pods-MVBSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T265XVEUYV;
 				INFOPLIST_FILE = MVBSwift/Info.plist;
@@ -541,6 +555,8 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
 				PRODUCT_BUNDLE_IDENTIFIER = M.MVBSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -551,6 +567,7 @@
 			baseConfigurationReference = FAA101466BE15D3331D0F38B /* Pods-MVBSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T265XVEUYV;
 				INFOPLIST_FILE = MVBSwift/Info.plist;
@@ -562,6 +579,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
 				PRODUCT_BUNDLE_IDENTIFIER = M.MVBSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

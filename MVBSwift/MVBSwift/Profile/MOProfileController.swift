@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MOProfileController: MOViewController {
+class MOProfileController: MOBaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

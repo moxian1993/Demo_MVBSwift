@@ -4,21 +4,27 @@ PODS:
   - Kingfisher (5.15.0):
     - Kingfisher/Core (= 5.15.0)
   - Kingfisher/Core (5.15.0)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.5.0)
   - SnapKit (5.0.1)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Alamofire
   - Cupcake
-  - Kingfisher
+  - Kingfisher (= 5.15.0)
+  - MBProgressHUD
+  - MJRefresh
   - SnapKit
   - SwiftyJSON
 
 SPEC REPOS:
-  trunk:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - Alamofire
     - Cupcake
     - Kingfisher
+    - MBProgressHUD
+    - MJRefresh
     - SnapKit
     - SwiftyJSON
 
@@ -26,9 +32,11 @@ SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   Cupcake: d258b6c0c289f7072340990107892aeb20d3fe98
   Kingfisher: 1acb67597a520c2d0310677e66d6e0af455ef757
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 732af88331899cf45ed01d0c6a6c0804ef2982de
+PODFILE CHECKSUM: 060a60ec4aeddc478702fba77190ada73637d939
 
 COCOAPODS: 1.9.1

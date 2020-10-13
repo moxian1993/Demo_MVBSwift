@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MODiscoverController: MOViewController {
+class MODiscoverController: MOBaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
