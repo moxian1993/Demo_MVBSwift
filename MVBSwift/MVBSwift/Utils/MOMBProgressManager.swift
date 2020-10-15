@@ -30,7 +30,8 @@ class MOMBProgressManager: NSObject {
     
     class func show(type: kMBProgressType = .Text, _ text: String? = nil, image: String? = nil, on view: UIView? = nil, duration: TimeInterval = hud_defaultDelay, completed: completed = nil) {
         
-        let hud = MBProgressHUD.showAdded(to: view ?? UIApplication.shared.windows.last!, animated: true)
+        let hud = MBProgressHUD()
+        (view ?? UIApplication.shared.windows.last!).addSubview(hud)
         
         if hud_tapToDismiss {
             let tap = UITapGestureRecognizer(target: self, action: #selector(self.tap(_:)))
@@ -49,6 +50,7 @@ class MOMBProgressManager: NSObject {
         if completed != nil {
             hud.completionBlock = completed
         }
+        hud.show(animated: true)
         hud.hide(animated: true, afterDelay: duration)
     }
     
@@ -91,8 +93,8 @@ class MOMBProgressManager: NSObject {
     }
     
     private class func setupConfig(hud: MBProgressHUD) {
-        // 1.隐藏时候从父控件中移除,默认 yes
-    //    hud.removeFromSuperViewOnHide = YES;
+        // 1.隐藏时候从父控件中移除
+        hud.removeFromSuperViewOnHide = true
         
         // 2.动画效果
     //    hud.animationType = MBProgressHUDAnimationZoom;
@@ -131,6 +133,8 @@ class MOMBProgressManager: NSObject {
 
         //10.是否强制背景框宽高相等
     //    hud.square = YES;
+        // 11.设置最短显示时间 避免显示后立刻被隐藏，默认是 0
+    //    hud.minShowTime = 3;
     }
     
     class func dismiss(_ view: UIView? = nil) {
